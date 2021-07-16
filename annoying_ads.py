@@ -5,7 +5,7 @@ from prompt_toolkit.styles import Style
 
 # LINKS IN THE FUNCTIONS
 # Rickroll link https://bit.ly/IqT6zt
-# PEP8 link https://bit.ly/3ifW7F9       
+# PEP8 link https://bit.ly/3ifW7F9
 
 # change styles according to newspaper
 style = Style.from_dict({
