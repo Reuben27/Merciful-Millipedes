@@ -4,7 +4,6 @@ from prompt_toolkit.shortcuts import button_dialog
 from prompt_toolkit.styles import Style
 
 # LINKS IN THE FUNCTIONS
-
 # Rickroll link https://bit.ly/IqT6zt
 # PEP8 link https://bit.ly/3ifW7F9       
 
@@ -22,17 +21,20 @@ style = Style.from_dict({
 # gonna add few more
 def simple_ad() -> None:
     """Calls dialog with content chosen randomly from list inside function"""
-
     content = [['You won lottery!', 'Congrutulations! To receive 5`000`000$\n'
                                     'at our site, you need to press the button below', 'GET PRIZE'],
                ['Increase your RAM!', 'Limited offer of EnchanceRAM software is now\n'
                                       'at sale with 50% discount! Press the button to open shop', 'MORE RAM'],
-               ['Read the fresh news!', 'Your newspaper is outdated! Grab the fresh\n'
-                                        'copy at our website for free with 3-day trial! (69$ each month after free '
+               ['Read the fresh news!', 'Your newspaper is outdated! Grab the fresh'
+                                        'copy at our website\n for free with 3-day trial! (69$ each month after free '
                                         'trial ends)',
                 'FRESH NEWS'],
-               ['Join Coffee Club', 'Coffee Club allows you to make money by inviting friends\n'
-                                    'and installing Coffee Brewer directly at your GPU!', 'JOIN CLUB'],
+               ['Join Coffee Club!', 'Coffee Club allows you to make money by inviting friends\n'
+                                     'and installing Coffee Brewer directly at your GPU!', 'JOIN CLUB'],
+               ['Your PC has virus!', 'Your PC was infected with virus! Please open link below to be redirected\n'
+                                      'to Indian Windows Support Centre to get virus removed', 'OPEN LINK'],
+               ['Ultra low prices!', 'Buy new phone for 30% of their price in the 24 hours!\n'
+                                     'Hurry, or you about to lose incredible offer in your life!', 'GO TO SHOP']
 
                ]
     while True:
@@ -50,7 +52,6 @@ def simple_ad() -> None:
 
 def joke_ad() -> None:
     """Calls dialog that can open link in browser if the answer is incorrect"""
-
     if button_dialog(
             title='Idk',
             text='Do you always follow PEP8?',
